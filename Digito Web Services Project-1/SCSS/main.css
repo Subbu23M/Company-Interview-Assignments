@@ -1,0 +1,136 @@
+body {
+  font-family: 'Dosis',sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Dosis',sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+.pre-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: visible;
+  /* z-index:stacks one on each other based on value  */
+  z-index: 999;
+  background-color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidePreLoader {
+  visibility: hidden;
+  /* z-index:stacks one on each other based on value  */
+  z-index: -999;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+}
+
+header .tex {
+  letter-spacing: 7px;
+}
+
+#quality {
+  margin-top: 25%;
+}
+
+#quality .dec {
+  color: #ff006e;
+}
+
+#quality .fur {
+  color: #42e395;
+}
+
+#quality .pro {
+  color: red;
+}
+
+#quality .wrap {
+  -webkit-clip-path: circle(31.9% at 50% 50%);
+          clip-path: circle(31.9% at 50% 50%);
+  background-color: #ff006e;
+  color: #191716;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#quality .wrap:hover {
+  -webkit-clip-path: inset(3% 1% 2% 3%);
+          clip-path: inset(3% 1% 2% 3%);
+}
+
+#quality .wrap-fur {
+  -webkit-clip-path: circle(31.9% at 50% 50%);
+          clip-path: circle(31.9% at 50% 50%);
+  background-color: #42e395;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#quality .wrap-fur:hover {
+  -webkit-clip-path: inset(3% 1% 2% 3%);
+          clip-path: inset(3% 1% 2% 3%);
+}
+
+#quality .wrap-pro {
+  -webkit-clip-path: circle(31.9% at 50% 50%);
+          clip-path: circle(31.9% at 50% 50%);
+  background-color: red;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+#quality .wrap-pro:hover {
+  -webkit-clip-path: inset(3% 1% 2% 3%);
+          clip-path: inset(3% 1% 2% 3%);
+}
+
+#about .underline {
+  width: 100px;
+  height: .2rem;
+}
+
+#design .underline {
+  width: 230px;
+  height: .2rem;
+}
+
+#testimony .underline {
+  width: 140px;
+  height: .2rem;
+}
+
+#contact .underline {
+  width: 100px;
+  height: .2rem;
+}
+/*# sourceMappingURL=main.css.map */

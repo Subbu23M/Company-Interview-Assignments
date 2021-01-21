@@ -1,0 +1,169 @@
+// Universal Effects
+
+// Added clip-paths from https://bennettfeely.com/clippy/
+
+body{
+    font-family: 'Dosis',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Dosis',sans-serif;
+}
+
+button:focus{
+    outline: none;
+}
+
+// Colors
+$pinkColor:#ff006e;
+$greenColor:#42e395;
+$textColor:#191716;
+
+.pre-loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+
+    /* z-index:stacks one on each other based on value  */
+    z-index: 999;
+
+    background-color: whitesmoke;
+
+    // Convert row into column
+    display: grid;
+
+    // On X-axis
+    justify-content: center;
+
+    // On Y-axis
+    align-items: center;
+}
+
+.hidePreLoader {
+    visibility: hidden;
+
+    /* z-index:stacks one on each other based on value  */
+    z-index: -999;
+}
+
+p{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+}
+
+// For Header Section
+header{
+
+    .tex{
+        letter-spacing: 7px;
+    }
+
+}
+
+// For Quality Section
+#quality{
+    margin-top: 25%;
+    
+    .dec{
+        color: $pinkColor;
+    }
+
+    .fur{
+        color: $greenColor;
+    }
+
+    .pro{
+        color: red;
+    }
+
+    .wrap{
+        clip-path: circle(31.9% at 50% 50%);
+        background-color: $pinkColor;
+        color: $textColor;
+
+        // transition:Default Property Duration
+        // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+        transition: all 1s linear;
+    }
+
+    .wrap:hover{
+        clip-path: inset(3% 1% 2% 3%);
+    }
+
+    .wrap-fur{
+        clip-path: circle(31.9% at 50% 50%);
+        background-color: $greenColor;
+
+        // transition:Default Property Duration
+        // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+        transition: all 1s linear;
+    }
+
+    .wrap-fur:hover{
+        clip-path: inset(3% 1% 2% 3%);
+    }
+
+    .wrap-pro{
+        clip-path: circle(31.9% at 50% 50%);
+        background-color: red;
+
+        // transition:Default Property Duration
+        // transition-timing-function:linear - specifies a transition effect with the same speed from start to end.
+        transition: all 1s linear;
+    }
+
+    .wrap-pro:hover{
+        clip-path: inset(3% 1% 2% 3%);
+    }
+}
+
+// For About Section
+#about{
+
+    .underline{
+        width: 100px;
+        height: .2rem;
+    }
+
+}
+
+// For Design Section
+#design{
+
+    .underline{
+        width: 230px;
+        height: .2rem;
+    }
+
+}
+
+// For Testimony Section
+#testimony{
+    .underline{
+        width: 140px;
+        height: .2rem;
+    }
+}
+
+// For contact Section
+#contact{
+    .underline{
+        width: 100px;
+        height: .2rem;
+    }
+}
